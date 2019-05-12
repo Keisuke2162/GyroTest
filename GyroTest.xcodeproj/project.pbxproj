@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E26D88A819EFC1A305EC694 /* Pods_GyroTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069F8518CB6FF96BBE245535 /* Pods_GyroTest.framework */; };
 		E7EC317E228846B10063CBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC317D228846B10063CBE9 /* AppDelegate.swift */; };
 		E7EC3180228846B10063CBE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC317F228846B10063CBE9 /* ViewController.swift */; };
 		E7EC3183228846B10063CBE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7EC3181228846B10063CBE9 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		069F8518CB6FF96BBE245535 /* Pods_GyroTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GyroTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C5CB4919729FC38D873312 /* Pods-GyroTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GyroTest.debug.xcconfig"; path = "Target Support Files/Pods-GyroTest/Pods-GyroTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9A6BB6F3C27BD51E42CF61AC /* Pods-GyroTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GyroTest.release.xcconfig"; path = "Target Support Files/Pods-GyroTest/Pods-GyroTest.release.xcconfig"; sourceTree = "<group>"; };
 		E7EC317A228846B10063CBE9 /* GyroTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GyroTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EC317D228846B10063CBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7EC317F228846B10063CBE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E26D88A819EFC1A305EC694 /* Pods_GyroTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		315AAE96B9A2A651EC2B4357 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21C5CB4919729FC38D873312 /* Pods-GyroTest.debug.xcconfig */,
+				9A6BB6F3C27BD51E42CF61AC /* Pods-GyroTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7889497DD833B0E67DF4CF82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				069F8518CB6FF96BBE245535 /* Pods_GyroTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7EC3171228846B10063CBE9 = {
 			isa = PBXGroup;
 			children = (
 				E7EC317C228846B10063CBE9 /* GyroTest */,
 				E7EC317B228846B10063CBE9 /* Products */,
+				315AAE96B9A2A651EC2B4357 /* Pods */,
+				7889497DD833B0E67DF4CF82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7EC318C228846B20063CBE9 /* Build configuration list for PBXNativeTarget "GyroTest" */;
 			buildPhases = (
+				9AE0D5E1EA087E9B8699F270 /* [CP] Check Pods Manifest.lock */,
 				E7EC3176228846B10063CBE9 /* Sources */,
 				E7EC3177228846B10063CBE9 /* Frameworks */,
 				E7EC3178228846B10063CBE9 /* Resources */,
+				8F84196230BF1D3DD7B19DB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F84196230BF1D3DD7B19DB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GyroTest/Pods-GyroTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GyroTest/Pods-GyroTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE0D5E1EA087E9B8699F270 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GyroTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7EC3176228846B10063CBE9 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		E7EC318D228846B20063CBE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C5CB4919729FC38D873312 /* Pods-GyroTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		E7EC318E228846B20063CBE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6BB6F3C27BD51E42CF61AC /* Pods-GyroTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
