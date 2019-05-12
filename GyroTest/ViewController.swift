@@ -12,12 +12,12 @@ import Charts
 
 class ViewController: UIViewController {
     
-    //加速度表示ラベル
+    //角速度表示ラベル
     @IBOutlet weak var xAxis: UILabel!
     @IBOutlet weak var yAxis: UILabel!
     @IBOutlet weak var zAxis: UILabel!
     
-    //加速度格納配列
+    //角速度格納配列
     var xDataArray = [Double]()
     var yDataArray = [Double]()
     var zDataArray = [Double]()
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     //viewDidLoad後に処理される
     override func viewDidAppear(_ animated: Bool) {
         
-        //加速度センサ値取得間隔（sec）
+        //角速度センサ値取得間隔（sec）
         motionManager.gyroUpdateInterval = 0.1
         
         //センサー値取得処理
@@ -47,12 +47,12 @@ class ViewController: UIViewController {
             //アンラップ
             if let data = data {
                 
-                //加速度を求める
+                //角速度を求める
                 let xData = data.rotationRate.x * 180 / Double.pi
                 let yData = data.rotationRate.y * 180 / Double.pi
                 let zData = data.rotationRate.z * 180 / Double.pi
                 
-                //求めた加速度を配列に格納
+                //求めた角速度を配列に格納
                 self.xDataArray.append(xData)
                 self.yDataArray.append(yData)
                 self.zDataArray.append(zData)
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
                     self.zDataArray.removeFirst()
                 }
                 
-                //加速度表示ラベルに値を表示
+                //角速度表示ラベルに値を表示
                 self.xAxis.text = "\(xData)"
                 self.yAxis.text = "\(yData)"
                 self.zAxis.text = "\(zData)"
