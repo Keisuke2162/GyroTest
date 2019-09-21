@@ -46,7 +46,6 @@
 				21C5CB4919729FC38D873312 /* Pods-GyroTest.debug.xcconfig */,
 				9A6BB6F3C27BD51E42CF61AC /* Pods-GyroTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -61,6 +60,7 @@
 		E7EC3171228846B10063CBE9 = {
 			isa = PBXGroup;
 			children = (
+				E7EC31B12289D3120063CBE9 /* NewGroupe */,
 				E7EC317C228846B10063CBE9 /* GyroTest */,
 				E7EC317B228846B10063CBE9 /* Products */,
 				315AAE96B9A2A651EC2B4357 /* Pods */,
@@ -87,6 +87,13 @@
 				E7EC3189228846B20063CBE9 /* Info.plist */,
 			);
 			path = GyroTest;
+			sourceTree = "<group>";
+		};
+		E7EC31B12289D3120063CBE9 /* NewGroupe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewGroupe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
